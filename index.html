@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7769126a5b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tillana:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="row">
+          <div class="col-3">
+            <i class="fa-solid fa-cloud-sun cloudy-icon-main"></i>
+          </div>
+
+          <div class="col-3">
+            <h1><strong id="tempMain">21</strong></h1>
+            <button id="celcius" type="button" class="btn btn-light shadow-sm">
+              °C
+            </button>
+            <button
+              id="fahrenheit"
+              type="button"
+              class="btn btn-light shadow-sm"
+            >
+              °F
+            </button>
+          </div>
+
+          <div class="col-6">
+            <h3>Precipitation: <span>0%</span></h3>
+            <h3>Humidity: <span>32%</span></h3>
+            <h3>Wind: <span>7 mph</span></h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <ul>
+              <li>
+                <h2>
+                  <strong id="current-city"> Lviv </strong>
+                </h2>
+              </li>
+              <li><h3 id="current-time">Saturday 18:30</h3></li>
+              <li><h3>Cloudy</h3></li>
+            </ul>
+          </div>
+
+          <div class="col-6">
+            <form id="input-form">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control shadow-sm"
+                  id="enterCity"
+                  placeholder="Enter a city"
+                  autofocus="on"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary shadow-sm">
+                Submit
+              </button>
+            </form>
+            <button
+              class="btn btn-primary shadow-sm"
+              id="current-location-button"
+            >
+              Current location
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <h3>Sat</h3>
+            <i class="fa-solid fa-cloud-sun small-icon"></i>
+            <h3>21°C</h3>
+          </div>
+          <div class="col">
+            <h3>Sun</h3>
+            <i class="fa-solid fa-cloud-sun small-icon"></i>
+            <h3>22°C</h3>
+          </div>
+          <div class="col">
+            <h3>Mon</h3>
+            <i class="fa-solid fa-cloud-showers-heavy small-icon"></i>
+            <h3>20°C</h3>
+          </div>
+          <div class="col">
+            <h3>Tue</h3>
+            <i class="fa-solid fa-cloud-sun small-icon"></i>
+            <h3>22°C</h3>
+          </div>
+          <div class="col">
+            <h3>Wed</h3>
+            <i class="fa-solid fa-cloud-showers-heavy small-icon"></i>
+            <h3>20°C</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-3">
+            <a class="cities-footer" href="">Kyiv</a>
+          </div>
+          <div class="col-3">
+            <a class="cities-footer" href="">Warsaw</a>
+          </div>
+          <div class="col-3">
+            <a class="cities-footer" href="">Prague</a>
+          </div>
+          <div class="col-3">
+            <a class="cities-footer" href="">Berlin</a>
+          </div>
+        </div>
+
+        <script src="src/index.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

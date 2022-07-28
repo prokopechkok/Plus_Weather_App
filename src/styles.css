@@ -1,0 +1,87 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(
+    circle at 18.7% 37.8%,
+    rgb(250, 250, 250) 0%,
+    rgb(225, 234, 238) 90%
+  );
+}
+h1 {
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  color: #132743;
+}
+.row {
+  padding: 5px 0;
+}
+.card {
+  margin: 20px;
+  max-width: 600px;
+  padding: 15px;
+  border: 1px solid #407088;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(
+    68.6deg,
+    rgb(252, 165, 241) 1.8%,
+    rgb(181, 255, 255) 100.5%
+  );
+  color: #132743;
+}
+button.btn-light {
+  display: inline-block;
+  background: transparent;
+  border: none;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  left: 20px;
+  color: #407088;
+  width: auto;
+}
+
+button.btn-light:hover {
+  color: #132743;
+  background: #efb6f4;
+}
+li {
+  list-style: none;
+}
+.cloudy-icon-main {
+  color: #132743;
+  font-size: 100px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+button.btn-primary {
+  background: #132743;
+  border-color: none;
+}
+button.btn-primary:hover {
+  background: #407088;
+}
+.col {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+#current-location-button {
+  background: #132743;
+  color: #fff;
+}
+.small-icon {
+  padding-bottom: 10px;
+  font-size: 3em;
+  color: #132743;
+}
+.cities-footer {
+  text-decoration: none;
+  font-size: 22px;
+  color: #407088;
+}
+.cities-footer:hover {
+  color: #132743;
+}
