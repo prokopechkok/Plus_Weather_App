@@ -85,3 +85,14 @@ button.btn-primary:hover {
 .cities-footer:hover {
   color: #132743;
 }
+#git-hub-repo {
+  text-align: center;
+  text-decoration: none;
+  font-size: 22px;
+  color: #407088;
+  max-width: 600px;
+  display: block;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
